@@ -1,0 +1,16 @@
+Set Values Macro (Ctrl + Shift + V)
+    Will Allow Excel to know which variable are which
+    Only needs to be run when differently formatted charts are run.
+
+All Values Macro (Ctrl + Shift + A)
+    This will get all the interval data, spate it into different sheets, the plot, format, and label every interval 
+    This needs to be run before doing the monthly and daily plots.
+
+Monthly Plot Macro (Ctrl + Shift + M)
+    This will plot a monthly chart based on a data point selected from the all values chart or daily chart
+
+Daily Plot Macro (Ctrl + Shift + D)
+    This will plot a daily chart based on a data point selected from the all values chart or monthly chart
+
+PowerPoint Macro (Ctrl + Shift + P)
+    This will plot all the charts from the Excel sheets and create a PowerPoint with Excel charts formatted as a PNG image
