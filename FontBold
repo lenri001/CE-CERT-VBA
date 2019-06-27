@@ -1,0 +1,19 @@
+
+
+Sub StandardFont()
+'
+
+'
+    Dim cht As ChartObject
+    For Each cht In ActiveSheet.ChartObjects
+    With cht.TextFrame2.TextRange.Font
+        .BaselineOffset = 0
+        .Bold = msoTrue
+        .Fill.Visible = msoTrue
+        .Fill.ForeColor.RGB = RGB(0, 0, 0)
+        .Fill.Transparency = 0
+        .Fill.Solid
+        .Size = 12
+        .Italic = msoFalse
+    End With
+End Sub
