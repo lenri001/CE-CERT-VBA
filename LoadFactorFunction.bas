@@ -1,7 +1,7 @@
 Attribute VB_Name = "Module13"
-Function LOADFACTOR(onpeak_kWh, midpeak_kWh, offpeak_kWh, onpeak_kW, midpeak_kW, offpeak_kW, days)
-avgload = (onpeak_kWh + midpeak_kWh + offpeak_kWh) / (days * 24#)
-maxload = Max(onpeak_kW, midpeak_kW, offpeak_kW)
+Function LOADFACTOR(onpeak_kWh, midpeak_kWh, offpeak_kWh, sopeak_kWh, onpeak_kW, midpeak_kW, offpeak_kW, sopeak_kW, days)
+avgload = (onpeak_kWh + midpeak_kWh + offpeak_kWh + sopeak_kWh) / (days * 24#)
+maxload = WorksheetFunction.Max(onpeak_kW, midpeak_kW, offpeak_kW, sopeak_kW)
 LOADFACTOR = avgload / maxload
 End Function
 Function PRIORITY(looadfactor, setval1, setval2, setval3, setval4)
