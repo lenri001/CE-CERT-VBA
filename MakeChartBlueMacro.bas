@@ -1,6 +1,6 @@
 Attribute VB_Name = "Module1"
 Sub Blue()
-Attribute Blue.VB_ProcData.VB_Invoke_Func = " \n14"
+
 '
 ' Blue Macro
 '
